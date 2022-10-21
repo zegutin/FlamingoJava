@@ -1,4 +1,4 @@
-package orientacaoObjeto;
+package orientacaoObjetos;
 
 public class Celular {
 	
@@ -15,7 +15,7 @@ public class Celular {
 	String[] entradaCartaoSD = {"Não"};
 		
 	//Precificação
-	String [] preco = {"R$9.000"};
+	String [] preco = {"8.500"};
 	
 	//Cartão SIM
 	String [] operadora = {"Oi"};
@@ -74,13 +74,36 @@ public class Celular {
 		Celular celular = new Celular();
 		
 		
-		System.out.println("Características gerais");
+		System.out.println("FICHA TÉCNICA");
+		
+		System.out.println("\nCaracterísticas gerais");
 		System.out.println("Marca: "+celular.marca[0]);
 		System.out.println("Linha: "+celular.linha[0]);
 		System.out.println("Modelo:"+celular.nomeModelo[0]);
 		System.out.println("Cor: "+celular.cor[0]);
+		System.out.println("Preço medio: R$"+celular.preco[0]);
 		
-		System.out.println("\nEspesificação da bateria");
+		System.out.println("\nMémoria");
+		System.out.println("Mémoria interna: "+celular.memoriaInterna[0]+" GB");
+		System.out.println("Mémoria Ram: "+celular.memoriaRam[0]+" GB");
+		System.out.println("Entrada Cartão SD: "+celular.entradaCartaoSD[0]);
+		
+		System.out.println("\nCartão SIM");
+		System.out.println("Operadora: "+celular.operadora[0]);
+		System.out.println("Quantidade de entrada SIM"+celular.quantidadeSIM[0]);
+		System.out.println("Dual SIM: "+celular.dualSIM[0]);
+		System.out.println("Tamanho do Cartão SIM: "+celular.tamanhoCartaoSIM[0]);
+		
+		System.out.println("\nEspesificação da Câmera");
+		System.out.println("Contem Câmera: "+celular.contemCamera[0]);
+		System.out.println("Câmera Frontal");
+		System.out.println("Quantidade de Câmera Frontal: "+celular.quantidadeCamerasFrontais[0]);
+		System.out.println("Resolusão da Câmera Frontal: "+celular.resolusaoCamerasFrontais[0]);
+		System.out.println("Câmera Traseira");
+		System.out.println("Quantidade de Câmerda Traseira"+celular.quantidadeCamerasTraseiras[0]);
+		System.out.println("Resolusão da Câmerda Traseira"+celular.resolusaoCamerasTraseiras[0]);
+		
+		System.out.println("\nBateria");
 		System.out.println("Carregamento Rapido: "+celular.carregamentoRapido[0]);
 		System.out.println("Carregamento Sem Fio: "+celular.carregamentoSemFio[0]);
 		System.out.println("Bateria: "+celular.bateria[0]+" mAh");
@@ -88,6 +111,7 @@ public class Celular {
 		
 		
 		System.out.println("\nTipo de tela");
-		System.out.println("Tamanho Tela: "+celular.tela[0]);
+		System.out.println("Tamanho da Tela: "+celular.tela[0]+" Polegada");
 	}
 }
+
